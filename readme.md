@@ -2,6 +2,11 @@
 
 通过 mixin 方式把 redux 常用方法注入到 regular 组件
 
+### 安装
+```shell
+    yarn add regular-mixin-redux
+```
+
 ### 方法
 #### connect（component, stores）
 假设 store.name = 'todo'，把 state 注入到 regular 组件 data.todo，

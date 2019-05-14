@@ -1,13 +1,14 @@
 {
   "name": "regular-mixin-redux",
   "version": "1.0.0",
-  "description": "",
+  "description": "regular 注入常用 redux 方法",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
-    "build": "node ./build/index.js"
+    "build": "node ./build/index.js",
+    "prepublish": "npm run build"
   },
-  "author": "",
+  "author": "moki0084",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.11",
@@ -16,5 +17,14 @@
     "rollup-plugin-commonjs": "^9.3.4",
     "rollup-plugin-node-resolve": "^4.2.4",
     "rollup-plugin-url": "^2.2.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moki0084/regular-mixin-redux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moki0084/regular-mixin-redux/issues"
+  },
+  "homepage": "https://github.com/moki0084/regular-mixin-redux#readme"
 }
