@@ -1,6 +1,6 @@
 {
   "name": "regular-mixin-redux",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "regular 注入常用 redux 方法",
   "main": "dist/index.js",
   "module": "dist/index.es.js",

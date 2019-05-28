@@ -34,7 +34,7 @@
 
 |属性|描述|
 |----|----|
-|subscribe[store.name]|监听 State 数据函数（store.name 首字母会被转成大写）|
+|subscribe[store.name] (newState, oldState)|监听 State 数据函数（store.name 首字母会被转成大写）|
 
 ##### 返回 
 

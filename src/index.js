@@ -23,10 +23,12 @@ const storeMixin = {
 
     const unsubscribe = store.subscribe(() => {
       const name = store.name
-      this.data[name] = store.getState()
+      const oldVal = this.data[name]
+      const newVal = store.getState()
+      this.data[name] = newVal
       const fnName = 'subscribe' + name.slice(0, 1).toUpperCase() + name.slice(1)
       if (this[fnName] && isFunction(this[fnName])) {
-        this[fnName]() // 用户操作自行 update
+        this[fnName](newVal, oldVal) // 用户操作自行 update
       } else {
         this.$update()
       }
